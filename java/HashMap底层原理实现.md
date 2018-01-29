@@ -4,7 +4,7 @@
 * ```V value```
 * ```Entry next```
 * ```int hash```
-*
+
 
 HashMap内部储存数据的是一个由```Entry```构成的数组，数组中的元素如上图所示，key存放键，value存放值，hash存放标志位，next是存放当不同key所生成的hash值相同时（不同的值可以存在相同的hash值），用来存放第二个键值对。
 
