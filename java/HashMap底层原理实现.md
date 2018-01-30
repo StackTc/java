@@ -7,6 +7,9 @@
 
 
 HashMap内部储存数据的是一个由```Entry```构成的数组，数组中的元素如上图所示，key存放键，value存放值，hash存放标志位，next是存放当不同key所生成的hash值相同时（不同的值可以存在相同的hash值），用来存放第二个键值对。
+```
+对不同的关键字可能得到同一散列地址，即k1≠k2，而f(k1)=f(k2)，这种现象称为碰撞
+```
 
 ![HashMap](https://github.com/StackTc/java/blob/master/photos/1517245358258.jpg "HashMap")
 
